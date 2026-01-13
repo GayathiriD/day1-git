@@ -1,16 +1,16 @@
 name: Day6 CI Test
 on:
   push:
-    branches: ["master","main]
+    branches: ["master","main"]
 jobs:
   test-job:
     runs-on: ubuntu-latest
 
     steps:
       - name: checkout code
-        uses: action / checkout@v3
+        uses: actions/checkout@v3
       
       - name: Run a test message
-        run: echo "CI pip;eline triggered successfully"
+        run: echo "CI pipeline triggered successfully"
       
       
