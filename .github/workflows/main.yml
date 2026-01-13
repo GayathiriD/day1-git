@@ -1,8 +1,7 @@
 name: Day6 CI Test
 on:
   push:
-    branches:
-      -master
+    branches: ["master","main]
 jobs:
   test-job:
     runs-on: ubuntu-latest
