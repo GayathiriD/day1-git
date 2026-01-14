@@ -13,7 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       
-      - name: Force fail(training)
-        run: exit 1
-
+      - name: Success message
+        run: echo "CI passed Successfully"
       
