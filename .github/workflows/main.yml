@@ -3,8 +3,6 @@ name: Day7 PR CI Test
 on:
   push:
     branches: ["master", "main"]
-  pull_request:
-    branches: ["master", "main"]
 
 jobs:
   test-job:
@@ -13,5 +11,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Force fail (training)
-        run: exit 1
+      - name: Run a test message
+        run : echo " CI pipeline triggered successfully"
