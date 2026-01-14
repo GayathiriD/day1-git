@@ -1,8 +1,11 @@
-name: Day7 PR CI Test
+name: Day7 PR CI Test v2
 
 on:
   push:
     branches: ["master", "main"]
+  
+  pull:
+    branches: ["master","main"]
 
 jobs:
   test-job:
