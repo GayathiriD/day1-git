@@ -3,8 +3,6 @@ name: Day7 PR CI Test
 on:
   push:
     branches: ["master", "main"]
-  pull_request:
-    branches: ["master", "main"]
 
 jobs:
   test-job:
@@ -16,4 +14,4 @@ jobs:
       - name: Force fail(training)
         run: exit 1
 
-      
+    
